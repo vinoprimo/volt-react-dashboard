@@ -4,7 +4,7 @@
         "src": "package.json",
         "use": "@vercel/static-build",
         "config": {
-          "buildCommand": "set NODE_OPTIONS=--openssl-legacy-provider && yarn build",
+          "buildCommand": "set NODE_OPTIONS=--openssl-legacy-provider && set CI=false && yarn build",
           "outputDirectory": "build"
         }
       }

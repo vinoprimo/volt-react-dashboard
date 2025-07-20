@@ -115,7 +115,7 @@ export default () => {
               </div>
               <div className="d-flex justify-content-center flex-column mb-6 mb-lg-5 mt-5">
                 <div className="text-center">
-                  <a href="https://themesberg.com" target="_blank">
+                  <a href="https://themesberg.com" target="_blank" rel="noopener noreferrer">
                     <Image src={ThemesbergLogoIcon} height={25} width={25} className="mb-3" alt="Themesberg Logo" />
                     <p className="text-muted font-small m-0">A Themesberg production</p>
                   </a>
@@ -211,8 +211,8 @@ export default () => {
               <h2 className="d-flex align-items-center">Mapbox <Badge pill bg='secondary' text="dark" className="badge-md ms-3 mb-0 fs-6">Pro</Badge></h2>
               <p className="mb-3 lead fw-bold">Markers and cards integration with Leaflet.js</p>
               <p className="mb-4">You can use this map to add markers with custom cards and show them on a map using our custom MapBox integration with Leaflet.js</p>
-              <Button href="https://demo.themesberg.com/volt-pro-react/#/map" className="me-3" variant="secondary" target="_blank"><FontAwesomeIcon icon={faMapMarkedAlt} className="me-2" /> Demo Map</Button>
-              <Button href="https://demo.themesberg.com/volt-pro-react/#/plugins/map" variant="outline-primary" target="_blank"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/map" className="me-3" variant="secondary" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMapMarkedAlt} className="me-2" /> Demo Map</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/plugins/map" variant="outline-primary" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
             </Col>
             <Col lg={6} className="order-lg-1">
               <Image src={MapboxImg} alt="MapBox Leaflet.js Custom Integration Mockup" />
@@ -227,8 +227,8 @@ export default () => {
               <p className="mb-4">
                 We created a fully editable calendar where you can add, edit and delete events for your admin dashboard.
               </p>
-              <Button href="https://demo.themesberg.com/volt-pro-react/#/calendar" className="me-3" variant="secondary" target="_blank"><FontAwesomeIcon icon={faCalendarAlt} className="me-2" /> Demo Calendar</Button>
-              <Button href="https://demo.themesberg.com/volt-pro-react/#/plugins/calendar" variant="outline-primary" target="_blank"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/calendar" className="me-3" variant="secondary" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faCalendarAlt} className="me-2" /> Demo Calendar</Button>
+              <Button href="https://demo.themesberg.com/volt-pro-react/#/plugins/calendar" variant="outline-primary" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faBook} className="me-2" /> Guide</Button>
             </Col>
             <Col lg={6}>
               <Image src={CalendarImg} alt="Calendar Preview" />
@@ -463,13 +463,13 @@ export default () => {
             <Col xs={12} className="text-center">
               <h2 className="h5 text-gray fw-normal mb-4">Available in the following technologies:</h2>
               <div>
-                <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard" target="_blank" className="me-3">
+                <Card.Link href="https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard" target="_blank" rel="noopener noreferrer" className="me-3">
                   <OverlayTrigger placement="top" trigger={['hover', 'focus']} overlay={<Tooltip>Bootstrap 5 · The most popular HTML, CSS, and JS library in the world.</Tooltip>}>
                     <Image src={BS5Logo} className="image image-sm" />
                   </OverlayTrigger>
                 </Card.Link>
 
-                <Card.Link href="https://themesberg.com/product/dashboard/volt-react" target="_blank" className="me-3">
+                <Card.Link href="https://themesberg.com/product/dashboard/volt-react" target="_blank" rel="noopener noreferrer" className="me-3">
                   <OverlayTrigger placement="top" trigger={['hover', 'focus']} overlay={<Tooltip>React · A JavaScript library for building user interfaces.</Tooltip>}>
                     <Image src={ReactLogo} className="image image-sm" />
                   </OverlayTrigger>
@@ -492,10 +492,10 @@ export default () => {
             <Col xs={6} md={2} className="mb-5 mb-lg-0">
               <span className="h5">Themesberg</span>
               <ul className="links-vertical mt-2">
-                <li><Card.Link target="_blank" href="https://themesberg.com/blog">Blog</Card.Link></li>
-                <li><Card.Link target="_blank" href="https://themesberg.com/products">Products</Card.Link></li>
-                <li><Card.Link target="_blank" href="https://themesberg.com/about">About Us</Card.Link></li>
-                <li><Card.Link target="_blank" href="https://themesberg.com/contact">Contact Us</Card.Link></li>
+                <li><Card.Link target="_blank" href="https://themesberg.com/blog" rel="noopener noreferrer">Blog</Card.Link></li>
+                <li><Card.Link target="_blank" href="https://themesberg.com/products" rel="noopener noreferrer">Products</Card.Link></li>
+                <li><Card.Link target="_blank" href="https://themesberg.com/about" rel="noopener noreferrer">About Us</Card.Link></li>
+                <li><Card.Link target="_blank" href="https://themesberg.com/contact" rel="noopener noreferrer">Contact Us</Card.Link></li>
               </ul>
             </Col>
             <Col xs={6} md={2} className="mb-5 mb-lg-0">
@@ -505,7 +505,7 @@ export default () => {
                   <Card.Link as={Link} to={Routes.DocsQuickStart.path} target="_blank">Getting started</Card.Link>
                 </li>
                 <li><Card.Link as={Link} to={Routes.DocsChangelog.path} target="_blank">Changelog</Card.Link></li>
-                <li><Card.Link target="_blank" href="https://themesberg.com/licensing">License</Card.Link></li>
+                <li><Card.Link target="_blank" href="https://themesberg.com/licensing" rel="noopener noreferrer">License</Card.Link></li>
               </ul>
             </Col>
             <Col xs={12} md={4} className="mb-5 mb-lg-0">
@@ -528,7 +528,7 @@ export default () => {
           <hr className="bg-gray my-5" />
           <Row>
             <Col className="mb-md-2">
-              <Card.Link href="https://themesberg.com" target="_blank" className="d-flex justify-content-center">
+              <Card.Link href="https://themesberg.com" target="_blank" rel="noopener noreferrer" className="d-flex justify-content-center">
                 <Image src={ThemesbergLogo} height={35} className="d-block mx-auto mb-3" alt="Themesberg Logo" />
               </Card.Link>
               <div className="d-flex text-center justify-content-center align-items-center" role="contentinfo">
